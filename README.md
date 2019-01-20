@@ -1,4 +1,6 @@
-# SEMS
-Sistemi Elektronik për Menaxhimin e Studentëve
+# SMS
+Student Management System In Python Django
 
-![Image](https://i.imgur.com/urz8xKb.png)
+![Image](https://i.imgur.com/EXEoSoZ.png)
+
+By Rahul Raj
