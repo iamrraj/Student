@@ -23,7 +23,9 @@
         </div>
         <input style="width: 100%" type="submit" class="btn btn-primary" value="Login"/>
         <hr/>
-        <a href="{% url 'password_reset' %}">Forgot password?</a>
+        <a href="{% url 'password_reset' %}">Forgot password?</a></br>
+        <a href="{% url 'user_add1' %}"> SignUp</a>
+        
     {% endif %}
 </form>
 {% endblock %}

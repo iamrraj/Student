@@ -49,11 +49,17 @@
                         <h6>Course info</h6><br/>
                         <div class="form-group">
                             {{ form.program }}
+                            {{ form.course }}
                         </div>
                         <div class="form-group position-relative">
                             <!-- <div class="block"></div> -->
                             {{ form.course }}<br/>
                             <small class="faded">Hold 'Control', or 'Command' on Mac and select</small>
+                        </div>
+                        <div class="form-group position-relative">
+                                <!-- <div class="block"></div> -->
+                                {{ form.course }}<br/>
+                                <small class="faded">Hold 'Control', or 'Command' on Mac and select</small>
                         </div>
                     </div>
                     {% if user.is_superuser %}

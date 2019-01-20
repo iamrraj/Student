@@ -25,7 +25,7 @@ SECRET_KEY = '(72n!^1v6f7y!e4o9y8s4273#*(z$1ak-il78!&ejxkbl1ecvj'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["e29ed4e1.ngrok.io"]
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -101,7 +101,7 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/accounts/login/'
+LOGOUT_REDIRECT_URL = '/accounts/login'
 SIGNUP_FORM_CLASS = 'seme.forms.SignUpForm'
 # AUTH_USER_MODEL = 'sems.User'
 

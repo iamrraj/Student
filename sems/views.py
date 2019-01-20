@@ -294,6 +294,25 @@ def user_add(request):
     else:
         return redirect('login')
 
+def user_add1(request):
+    if request.method == 'POST':
+        form = UserCreationForm(request.POST)
+        if form.is_valid():
+            form.save()
+            uid = Student.objects.latest('pk').pk
+            return redirect('user_edit', pk=uid)
+    else:
+        form = UserCreationForm()
+
+    print(form.errors)
+
+    if request.user.is_authenticated and request.user.is_superuser:
+        return render(
+            request, 'signup.html', {'form': form},
+        )
+    else:
+        return render(
+            request, 'signup.html', {'form': form})
 
 def user_delete(request, pk):
     usr = get_object_or_404(User, pk=pk)
@@ -312,6 +331,7 @@ def user_edit(request, pk):
             form.save(commit=False)
 
             courses = request.POST.getlist('course')
+            
 
             is_super = request.POST.get('is_super')
 
