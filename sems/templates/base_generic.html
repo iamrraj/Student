@@ -21,7 +21,7 @@
             <div class="row">
                 <div class="no-padding col-md-1 col-sm-4">
                     <header>
-                        <nav>
+                        <nav class="bg-primary>
                             {% url 'home' as hom %} {% url 'students' as acc %} {% url 'programs' as prog %} {% url 'login' as log %} {% url 'student_detail' pk=user.student.pk as sd %}
                             <a href="{% url 'home' %}" {% if request.path == hom %} class="active" {% endif %}>Home</a>
                             <a href="{% url 'students' %}" {% if request.path == acc %} class="active" {% endif %}>Accounts</a>
